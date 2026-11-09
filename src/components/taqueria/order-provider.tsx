@@ -10,7 +10,7 @@ type Issue = { kind: "uncertain" | "conflict" | "error" | "session"; message: st
 type Store = {
   menu: Menu | null; menuLoading: boolean; menuError: string; loadMenu: () => Promise<void>;
   cart: Cart | null; latestOrder: Order | null; loading: boolean; pending: boolean; issue: Issue | null; notice: string; resetEpoch: number;
-  initialize: (recover?: boolean) => Promise<Cart | null>; refresh: (expected?: Cart) => Promise<Cart | null>;
+  initialize: (recover?: boolean, retryOriginal?: boolean) => Promise<Cart | null>; refresh: (expected?: Cart) => Promise<Cart | null>;
   mutate: (endpoint: string, fields?: Record<string, unknown>, options?: { product?: Product; navigate?: boolean }) => Promise<MutationResult | null>;
   add: (product: Product, navigate?: boolean) => Promise<MutationResult | null>;
   retry: () => Promise<void>; check: () => Promise<void>; useCurrent: () => void; reapply: (quantity?: number) => Promise<void>; clearIssue: () => void;
@@ -42,7 +42,7 @@ export function OrderProvider({ children }: { children: ReactNode }) {
   const [cart, setCart] = useState<Cart | null>(null), [latestOrder, setLatestOrder] = useState<Order | null>(null);
   const [loading, setLoading] = useState(true), [pending, setPending] = useState(false), [issue, setIssue] = useState<Issue | null>(null), [notice, setNotice] = useState("");
   const [resetEpoch, setResetEpoch] = useState(0);
-  const cartRef = useRef<Cart | null>(null), issueRef = useRef<Issue | null>(null), busy = useRef(false);
+  const cartRef = useRef<Cart | null>(null), issueRef = useRef<Issue | null>(null), busy = useRef(false), initializing = useRef(false);
   const setProblem = useCallback((problem: Issue | null) => { issueRef.current = problem; setIssue(problem); }, []);
   const applyCart = useCallback((next: Cart) => { cartRef.current = next; setCart(next); }, []);
   const applyRead = useCallback((data: CartResponse) => { applyCart(data.cart); setLatestOrder(data.latestOrder); }, [applyCart]);
@@ -52,18 +52,19 @@ export function OrderProvider({ children }: { children: ReactNode }) {
     catch { setMenuError("No pudimos cargar el menú. Reintenta para consultar productos y precios."); }
     finally { setMenuLoading(false); }
   }, []);
-  useEffect(() => { let live = true; void Promise.resolve().then(() => { if (live) void loadMenu(); }); void request<CartResponse>("/api/cart").then(data => { if (live && !cartRef.current) applyRead(data); }).catch(error => { if (live && !(error instanceof RequestFailure && error.status === 401)) setNotice("El pedido todavía no está disponible. Puedes seguir consultando el menú."); }).finally(() => { if (live) setLoading(false); }); return () => { live = false; }; }, [loadMenu, applyRead]);
-  const initialize = useCallback(async (recover = false) => {
+  useEffect(() => { let live = true; void Promise.resolve().then(() => { if (live) void loadMenu(); }); void request<CartResponse>("/api/cart").then(data => { if (live && !cartRef.current) applyRead(data); }).catch(error => { if (live && !(error instanceof RequestFailure && error.status === 401)) setNotice("El pedido todavía no está disponible. Puedes seguir consultando el menú."); }).finally(() => { if (live && !initializing.current) setLoading(false); }); return () => { live = false; }; }, [loadMenu, applyRead]);
+  const initialize = useCallback(async (recover = false, retryOriginal = false) => {
+    initializing.current = true;
     setLoading(true);
+    const retainedIntent = issueRef.current?.intent;
     try {
-      const retainedIntent = issueRef.current?.intent;
-      const data = await establishSession(recover);
+      const data = await establishSession(recover, retryOriginal);
       applyRead(data);
       setProblem(retainedIntent && !recover ? { kind: "uncertain", message: "Todavía no podemos confirmar el guardado. Comprueba el estado antes de hacer otro cambio.", intent: retainedIntent } : null);
       return data.cart;
     }
-    catch (error) { setProblem({ kind: error instanceof RequestFailure && error.status !== 401 ? "error" : "session", message: error instanceof RequestFailure ? error.message : "No podemos acceder a tu sesión. Comprueba tu conexión y permite las cookies para volver a intentarlo." }); return null; }
-    finally { setLoading(false); }
+    catch (error) { setProblem({ kind: error instanceof RequestFailure && (error.status === 401 || error.body.error.code === "SESSION_INITIALIZATION_UNCERTAIN") ? "session" : "error", message: error instanceof RequestFailure ? error.message : "No podemos comprobar tu sesión. Comprueba tu conexión y reintenta; todavía no podemos confirmar el resultado.", intent: retainedIntent }); return null; }
+    finally { initializing.current = false; setLoading(false); }
   }, [applyRead, setProblem]);
   const refresh = useCallback(async (expected?: Cart) => {
     try {
@@ -96,7 +97,7 @@ export function OrderProvider({ children }: { children: ReactNode }) {
   const mutate = useCallback(async (endpoint: string, fields: Record<string, unknown> = {}, options?: { product?: Product; navigate?: boolean }) => {
     if (busy.current || issueRef.current) return null;
     busy.current = true;
-    const current = cartRef.current || await initialize();
+    const current = cartRef.current || await initialize(false, true);
     if (!current) { busy.current = false; return null; }
     const intent: Intent = { endpoint, payload: Object.freeze({ cartId: current.id, expectedVersion: current.version, idempotencyKey: crypto.randomUUID(), ...fields }), ...options };
     return send(intent);
@@ -108,7 +109,7 @@ export function OrderProvider({ children }: { children: ReactNode }) {
   const retry = useCallback(async () => {
     if (busy.current) return;
     const problem = issueRef.current;
-    if (problem?.intent) { await send(problem.intent); } else { await initialize(); }
+    if (problem?.intent) { await send(problem.intent); } else { await initialize(false, true); }
   }, [initialize, send]);
   const check = useCallback(async () => {
     const intent = issueRef.current?.intent; if (!intent || busy.current) return;
