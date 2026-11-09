@@ -54,3 +54,4 @@ AGENTS.md
 .claude/
 .agents/
 skills-lock.json
+.constructor-contract.md

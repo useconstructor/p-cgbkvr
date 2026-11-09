@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "workflows": [
+    {
+      "id": "menu",
+      "name": "Consultar menú",
+      "description": "Consultar los productos y precios de ejemplo",
+      "endpoint": "/api/menu",
+      "method": "GET",
+      "input": {}
+    }
+  ]
+}

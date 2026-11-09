@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "resources": [
+    {
+      "id": "taco-al-pastor",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/taco-al-pastor-v1.svg",
+      "sha256": "286f18c05a4cf0255ad5549789e533ab9624605b62b98897ed4c1ecebfe6efdf"
+    },
+    {
+      "id": "taco-de-asada",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/taco-de-asada-v1.svg",
+      "sha256": "38a63472aa6c159439b53b507830e88b153246ccc8839b58d2a0585ec4841f2c"
+    },
+    {
+      "id": "taco-de-pollo",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/taco-de-pollo-v1.svg",
+      "sha256": "65141a187da587ffd416e41e1dbb0da44347167dee7e97f0889d3b80b648846f"
+    },
+    {
+      "id": "taco-de-carnitas",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/taco-de-carnitas-v1.svg",
+      "sha256": "34a06516bbc0466ccdee321f69a8c0f76ff7edbfb96db807daa4b0e839cd52eb"
+    },
+    {
+      "id": "taco-de-champinones",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/taco-de-champinones-v1.svg",
+      "sha256": "c3949e737c89d3ac482a84e39d5aa6be28ad2661940be57aed024979f89e2cb9"
+    },
+    {
+      "id": "taco-de-nopales",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/taco-de-nopales-v1.svg",
+      "sha256": "6f64f1b781d31db2e9303ce05786b38208d91269b6cb1eff2049d4bbf9590675"
+    },
+    {
+      "id": "agua-de-jamaica",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/agua-de-jamaica-v1.svg",
+      "sha256": "a6c736eb548e6ba6aed3d64077353f8f0b6f605b6674b016013127d178d240f7"
+    },
+    {
+      "id": "agua-de-horchata",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/agua-de-horchata-v1.svg",
+      "sha256": "cea9a0382bc79e5189006709c613643b15d7570fa3bfbcafbf7d2197764e4a84"
+    },
+    {
+      "id": "agua-natural",
+      "version": 1,
+      "presentationVersion": 1,
+      "path": "/menu/agua-natural-v1.svg",
+      "sha256": "7c866af60101f816585661870e56a9e534804038971e0a60ede960e2733f58e1"
+    }
+  ]
+}

@@ -1,0 +1,1018 @@
+{
+  "primaryColor": "#E64D79",
+  "secondaryColor": "#FFD447",
+  "backgroundColor": "#FFFFFF",
+  "textColor": "#173B2B",
+  "accentColor": "#E64D79",
+  "fontHeading": "Bricolage Grotesque",
+  "fontBody": "DM Sans",
+  "borderRadius": "0.75rem",
+  "logoText": "Taquería Monterey",
+  "logoImageUrl": null,
+  "tone": "playful",
+  "brandbook": {
+    "version": 1,
+    "origin": "proposed",
+    "researchStatus": "not_found",
+    "tokenSemanticsVersion": 1,
+    "positioning": "Propuesta original para la demo ficticia de Esteban: una taquería alegre y cercana cuyo cartel invita a elegir tacos y guardar pedidos de ejemplo, sin representar un negocio oficial ni prometer servicio real.",
+    "voice": "Español directo, cálido y breve. Hablar de elegir, añadir, revisar y guardar. Nombrar claramente errores y límites sin tecnicismos innecesarios. Usar el aviso de demo una vez por página y aclarar en confirmación que no hubo cobro ni envío a cocina.",
+    "motif": "Tortilla semicircular con dos cortes gráficos. Su curva identifica el símbolo y la familia ilustrada; el marco verde del cartel y su borde inferior continuo conectan producto, especificación y acción sin falsas capas tridimensionales.",
+    "sources": [
+      "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;600;700&display=swap",
+      "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap"
+    ],
+    "colors": [
+      {
+        "role": "background",
+        "name": "Clean Canvas",
+        "hex": "#FFFFFF"
+      },
+      {
+        "role": "surface",
+        "name": "Sunny Tortilla",
+        "hex": "#FFD447"
+      },
+      {
+        "role": "accent",
+        "name": "Radish Pop",
+        "hex": "#E64D79"
+      },
+      {
+        "role": "text",
+        "name": "Menu Ink",
+        "hex": "#173B2B"
+      },
+      {
+        "role": "muted",
+        "name": "Garden Frame",
+        "hex": "#28754C"
+      }
+    ],
+    "fontFaces": [
+      {
+        "family": "Bricolage Grotesque",
+        "weight": "400",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/b56db40c26850f83ba2ebffa1f7faa01e5ee4e55ac63decee1433de520a38483.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvRviyM0.ttf",
+        "sha256": "b56db40c26850f83ba2ebffa1f7faa01e5ee4e55ac63decee1433de520a38483"
+      },
+      {
+        "family": "Bricolage Grotesque",
+        "weight": "500",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/e1b454f5469f3d0d98c117651a4d15a8345ad77b50f09540b5cf61e82511b563.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvSniyM0.ttf",
+        "sha256": "e1b454f5469f3d0d98c117651a4d15a8345ad77b50f09540b5cf61e82511b563"
+      },
+      {
+        "family": "Bricolage Grotesque",
+        "weight": "600",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/284891c74c258cff7233962e048d9470bfb9fc326b53dd0bca408789297c3409.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvcXlyM0.ttf",
+        "sha256": "284891c74c258cff7233962e048d9470bfb9fc326b53dd0bca408789297c3409"
+      },
+      {
+        "family": "Bricolage Grotesque",
+        "weight": "700",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/913ee3631949ee1b4fb2601269412fca5775eb994d4f87be2c366c94ac123dc5.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvfzlyM0.ttf",
+        "sha256": "913ee3631949ee1b4fb2601269412fca5775eb994d4f87be2c366c94ac123dc5"
+      },
+      {
+        "family": "DM Sans",
+        "weight": "400",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf",
+        "sha256": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9"
+      },
+      {
+        "family": "DM Sans",
+        "weight": "500",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAkJxhTg.ttf",
+        "sha256": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae"
+      },
+      {
+        "family": "DM Sans",
+        "weight": "600",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf",
+        "sha256": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a"
+      },
+      {
+        "family": "DM Sans",
+        "weight": "700",
+        "url": "https://odifhpxpphpkaucgsthd.supabase.co/storage/v1/object/public/screenshots/projects/P-CGBKVR/brand/fonts/2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211.ttf",
+        "availableWeights": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "originalUrl": "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwARZthTg.ttf",
+        "sha256": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211"
+      }
+    ],
+    "markSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 160\"><path fill=\"#173B2B\" d=\"M16 56H144A64 64 0 0 1 16 56Z\"/><path fill=\"#FFD447\" d=\"M24 60H136A56 56 0 0 1 24 60Z\"/><path fill=\"#173B2B\" d=\"M48 56H56V84H48Z M104 56H112V84H104Z\"/></svg>",
+    "pages": [
+      {
+        "title": "Brand guidelines",
+        "summary": "Propuesta original para la demo ficticia de Esteban: una taquería alegre y cercana cuyo cartel invita a elegir tacos y guardar pedidos de ejemplo, sin representar un negocio oficial ni prometer servicio real.",
+        "examples": [
+          {
+            "title": "Taquería Monterey",
+            "text": "Brand guidelines · Original identity proposal"
+          },
+          {
+            "title": "Cover composition",
+            "text": "Place the symbol above the two-line name. Leave 48 px between the identity block and the edition line."
+          }
+        ],
+        "id": "brand-page-1",
+        "layout": "cover"
+      },
+      {
+        "title": "The Brand",
+        "summary": "Use a Radish Pop divider with Menu Ink lettering. Introduce the identity through choosing tacos, not through invented restaurant heritage.",
+        "examples": [
+          {
+            "title": "Elige algo rico",
+            "text": "Tacos, bebidas y un pedido de ejemplo."
+          },
+          {
+            "title": "Divider rhythm",
+            "text": "Use one short headline, one supporting sentence and a small tortilla symbol. Do not add promotional badges."
+          }
+        ],
+        "id": "brand-page-2",
+        "layout": "divider"
+      },
+      {
+        "title": "Welcome",
+        "summary": "A completed public search did not identify a matching brand identity. This guide presents an original identity proposed for this project.",
+        "examples": [
+          {
+            "title": "Required page notice",
+            "text": "Demo ficticia de Esteban · Productos y precios de ejemplo"
+          },
+          {
+            "title": "Scope",
+            "text": "The planned app has only Menú and Mi pedido. Printed and social studies do not introduce services, locations or additional routes."
+          }
+        ],
+        "id": "brand-page-3",
+        "layout": "content"
+      },
+      {
+        "title": "Index",
+        "summary": "Keep navigation through the manual compact: three left-aligned groups, matching page numbers and no decorative contents tiles.",
+        "examples": [
+          {
+            "title": "01–15 · Identity",
+            "text": "01 Cover · 02–08 Brand and voice · 09–15 Logo system"
+          },
+          {
+            "title": "16–29 · Visual language",
+            "text": "16–22 Typography and layouts · 23–25 Colors · 26–29 Graphic elements and imagery"
+          },
+          {
+            "title": "30–49 · Applications",
+            "text": "30–37 Public-facing studies · 38–43 Ordering and digital studies · 44–48 Supporting studies · 49 Colophon"
+          }
+        ],
+        "id": "brand-page-4",
+        "layout": "content"
+      },
+      {
+        "title": "Defining",
+        "summary": "Build the identity around a living menu poster: white field, green frame, yellow heading and a complete illustrated product. Keep name, price and action on its real lower edge.",
+        "examples": [
+          {
+            "title": "Chosen direction",
+            "text": "Living menu poster: Taco al pastor above a shared margin containing its name, $28.00 MXN and «Armar mi pedido»."
+          },
+          {
+            "title": "Alternatives",
+            "text": "An illustrated tablecloth scatters editing controls; a serving-window scene adds unnecessary theatre. Neither becomes the main layout."
+          }
+        ],
+        "id": "brand-page-5",
+        "layout": "content"
+      },
+      {
+        "title": "Vision & Mission",
+        "summary": "Treat these as project aims, not corporate declarations: make selection easy and make saved state understandable. Avoid claims about quality, sourcing or restaurant service.",
+        "examples": [
+          {
+            "title": "Experience aim",
+            "text": "Elegir tacos sin aprender una interfaz complicada."
+          },
+          {
+            "title": "Practical aim",
+            "text": "Añade productos, revisa cantidades y guarda un pedido de ejemplo."
+          }
+        ],
+        "id": "brand-page-6",
+        "layout": "content"
+      },
+      {
+        "title": "Brand Values",
+        "summary": "Express proposed design principles through visible choices: clarity in labels, warmth in illustration and honesty in status. Do not present them as an established company's values.",
+        "examples": [
+          {
+            "title": "Clarity",
+            "text": "Use «Quitar» for removal and «Cantidad» for the editable number. Never make zero a hidden removal command."
+          },
+          {
+            "title": "Honesty",
+            "text": "Show «Guardando…» while waiting. Reserve «Pedido de ejemplo guardado» for a successful server response."
+          },
+          {
+            "title": "Warmth",
+            "text": "Let the curved tortilla and yellow header carry the playfulness; keep quantity errors direct and calm."
+          }
+        ],
+        "id": "brand-page-7",
+        "layout": "content"
+      },
+      {
+        "title": "Tone of Voice",
+        "summary": "Write interface copy in brief, warm Spanish. Prefer concrete verbs and sentence case. Explain the next useful action without kitchen, payment or delivery language.",
+        "examples": [
+          {
+            "title": "Action vocabulary",
+            "text": "Elegir · Añadir · Revisar pedido · Guardar"
+          },
+          {
+            "title": "Quantity limit",
+            "text": "Puedes elegir hasta 20 unidades de este producto. La cantidad sigue en 20."
+          },
+          {
+            "title": "Uncertain result",
+            "text": "Todavía no podemos confirmar el guardado. Comprueba el estado antes de hacer otro cambio."
+          }
+        ],
+        "id": "brand-page-8",
+        "layout": "content"
+      },
+      {
+        "title": "Logo",
+        "summary": "Use Sunny Tortilla for the logo chapter. Present the symbol and name as separate elements: original geometry for the mark, real typography for the name.",
+        "examples": [
+          {
+            "title": "Taquería Monterey",
+            "text": "A semicircular tortilla with two cuts anchors a compact, two-line name."
+          },
+          {
+            "title": "Study field",
+            "text": "Center the identity on a yellow field, using a white support surface beneath the complete symbol."
+          }
+        ],
+        "id": "brand-page-9",
+        "layout": "divider"
+      },
+      {
+        "title": "Logo overview",
+        "summary": "The identity has three approved project arrangements: stacked name with symbol, compact header lockup and symbol alone for tiny square spaces. Do not merge letters into the SVG.",
+        "examples": [
+          {
+            "title": "Full introduction",
+            "text": "Symbol beside «Taquería» over «Monterey», both in Bricolage Grotesque 700."
+          },
+          {
+            "title": "Compact recognition",
+            "text": "Use the tortilla alone for the favicon; retain the complete name in the page header."
+          }
+        ],
+        "id": "brand-page-10",
+        "layout": "logo"
+      },
+      {
+        "title": "Primary logo",
+        "summary": "Set Taquería above Monterey in Bricolage Grotesque 700, left aligned. Keep both lines at the same size, with tight but open spacing and no forced capitals.",
+        "examples": [
+          {
+            "title": "Desktop lockup",
+            "text": "Use a 48 px symbol, a 12 px gap and a 24 px two-line name. Align the symbol to the name block's vertical center."
+          },
+          {
+            "title": "Compact header",
+            "text": "Use a 32 px symbol, an 8 px gap and an 18 px name. Keep the accent in «Taquería» visible."
+          }
+        ],
+        "id": "brand-page-11",
+        "layout": "logo"
+      },
+      {
+        "title": "Logo Safezone",
+        "summary": "Define x as one quarter of the visible symbol width. Leave at least x around the complete lockup; backgrounds may continue through this space, but controls and text may not.",
+        "examples": [
+          {
+            "title": "Header spacing",
+            "text": "A 32 px visible symbol requires at least 8 px of clear space around the lockup before navigation begins."
+          },
+          {
+            "title": "Poster spacing",
+            "text": "An 80 px visible symbol requires 20 px of clear space. Keep product names and the green frame outside it."
+          }
+        ],
+        "id": "brand-page-12",
+        "layout": "logo"
+      },
+      {
+        "title": "Color combinations",
+        "summary": "Keep the symbol's yellow and ink geometry unchanged. On colored fields, place it on a white support surface that preserves the full shape and clear space.",
+        "examples": [
+          {
+            "title": "White menu",
+            "text": "Use the original yellow-and-ink symbol with the name in Menu Ink."
+          },
+          {
+            "title": "Dark cover",
+            "text": "Use a white symbol support and a white typographic name on #173B2B. Keep the name separate from the SVG."
+          },
+          {
+            "title": "Pink divider",
+            "text": "Use Menu Ink text on #E64D79. Do not recolor the tortilla pink or use white for small text."
+          }
+        ],
+        "id": "brand-page-13",
+        "layout": "colors"
+      },
+      {
+        "title": "Brandmark",
+        "summary": "The master mark is a downward semicircular tortilla with two upright cuts. Preserve its proportions, yellow interior and dark outline; it is not an initial or a container for text.",
+        "examples": [
+          {
+            "title": "Small symbol",
+            "text": "At 24 px, retain both cuts and the complete curve. Do not add ingredient details."
+          },
+          {
+            "title": "Large symbol",
+            "text": "On a chapter divider, enlarge the same geometry rather than adding shadows, texture or dimensional folds."
+          }
+        ],
+        "id": "brand-page-14",
+        "layout": "logo"
+      },
+      {
+        "title": "Logo misuse",
+        "summary": "Never stretch, rotate, crop or decorate the mark. Preserve the exact name, its accent and its two-line reading order. Keep food illustration distinct from the identity symbol.",
+        "examples": [
+          {
+            "title": "Name integrity",
+            "text": "Use «Taquería Monterey», not «Taqueria Monterrey», «Monterey Tacos» or an all-capitals substitute."
+          },
+          {
+            "title": "Shape integrity",
+            "text": "Do not turn the tortilla into a smile, add a face or hide one cut behind a product illustration."
+          }
+        ],
+        "id": "brand-page-15",
+        "layout": "logo"
+      },
+      {
+        "title": "Typography",
+        "summary": "Open the type chapter with a short Spanish headline and generous white space. Let compact display lettering contrast with quiet, readable supporting copy.",
+        "examples": [
+          {
+            "title": "Tacos a tu gusto",
+            "text": "Elige productos y revisa tu pedido de ejemplo."
+          },
+          {
+            "title": "Divider setting",
+            "text": "Set the headline in Bricolage Grotesque 700 and the supporting sentence in DM Sans 400, separated by 16 px."
+          }
+        ],
+        "id": "brand-page-16",
+        "layout": "divider"
+      },
+      {
+        "title": "Typography overview",
+        "summary": "Use Bricolage Grotesque for names and display headings; use DM Sans for descriptions, prices and controls. The supplied font files are available for local serving.",
+        "examples": [
+          {
+            "title": "Elige tu taco",
+            "text": "Seis tacos y tres bebidas de ejemplo para armar tu selección."
+          },
+          {
+            "title": "Family roles",
+            "text": "Bricolage Grotesque 700 leads the poster. DM Sans 400–600 carries the searchable menu and order specification."
+          }
+        ],
+        "id": "brand-page-17",
+        "layout": "type"
+      },
+      {
+        "title": "Primary typeface",
+        "summary": "Use Bricolage Grotesque 700 in sentence case. Keep headlines short, preserve accents and allow natural wrapping rather than squeezing the letters.",
+        "examples": [
+          {
+            "title": "Un taco para empezar",
+            "text": "Taco al pastor · $28.00 MXN"
+          },
+          {
+            "title": "Display setting",
+            "text": "Use 72 px on spacious posters and 36 px on narrow screens. Start at 1.05 line height and keep accents clear."
+          }
+        ],
+        "id": "brand-page-18",
+        "layout": "type"
+      },
+      {
+        "title": "Typography",
+        "summary": "Use weight, not decoration, to separate roles: Bricolage Grotesque 700 for headings; DM Sans 400 for reading, 500 for navigation and 600 for actions and totals. Avoid synthetic bold and italics.",
+        "examples": [
+          {
+            "title": "Revisa tu selección",
+            "text": "Comprueba las cantidades antes de confirmar tu pedido de ejemplo."
+          },
+          {
+            "title": "Weight specimen",
+            "text": "«Taco de asada» uses display 700; its description uses body 400; «Añadir» and «Total» use body 600."
+          }
+        ],
+        "id": "brand-page-19",
+        "layout": "type"
+      },
+      {
+        "title": "Supporting type",
+        "summary": "Set descriptions and inputs in DM Sans from 16 px. Use at least 14 px for navigation and buttons, and 12 px only for secondary notes. Keep numerals stable in price columns.",
+        "examples": [
+          {
+            "title": "Agua de horchata",
+            "text": "Bebida de ejemplo con una nota ilustrada de canela. $28.00 MXN"
+          },
+          {
+            "title": "Reading rhythm",
+            "text": "Use approximately 1.5 line height for descriptions. Align MXN amounts on the right without shrinking long product names."
+          }
+        ],
+        "id": "brand-page-20",
+        "layout": "type"
+      },
+      {
+        "title": "Hierarchy",
+        "summary": "Give each state one leading heading and one primary action. Product name, price and action share a clear band; notices remain readable without competing with the selection.",
+        "examples": [
+          {
+            "title": "Mi pedido",
+            "text": "Revisa los productos que elegiste."
+          },
+          {
+            "title": "Three levels",
+            "text": "Use 36 px for «Mi pedido», 20 px for «Taco de champiñones» and 16 px for quantity, unit price and subtotal."
+          },
+          {
+            "title": "Notice level",
+            "text": "Set the once-per-page demo notice at 12–14 px in Menu Ink, outside the primary action group."
+          }
+        ],
+        "id": "brand-page-21",
+        "layout": "type"
+      },
+      {
+        "title": "Layouts",
+        "summary": "Use the 4/8/12/16/24/32/48 px spacing scale. Keep the poster in normal flow; place order controls right on desktop and below the scene at 768 px. Never overlay a bottom dock.",
+        "examples": [
+          {
+            "title": "Tu selección, de un vistazo",
+            "text": "Una ilustración por producto; la cantidad se muestra con números."
+          },
+          {
+            "title": "Desktop composition",
+            "text": "Keep selected products in up to three columns. Align controls to the scene's right edge and total to its closing band."
+          },
+          {
+            "title": "390 × 660 study",
+            "text": "Aim for 52 px header, 60 px title/notice, 192 px scene, 76 px total/action and 110 px first control group. Let content continue below."
+          }
+        ],
+        "id": "brand-page-22",
+        "layout": "applications"
+      },
+      {
+        "title": "Colors",
+        "summary": "Introduce color with large, flat fields. White provides clarity, yellow brings warmth, green structures the poster and pink supplies a small expressive interruption.",
+        "examples": [
+          {
+            "title": "Poster balance",
+            "text": "Keep the menu field white, its heading yellow and its continuous frame green. Use pink for a small accent, not a second frame."
+          },
+          {
+            "title": "Control distinction",
+            "text": "In the app, primary actions are yellow with Menu Ink. Pink may accent the manual but does not replace the planned yellow CTA."
+          }
+        ],
+        "id": "brand-page-23",
+        "layout": "divider"
+      },
+      {
+        "title": "Colors overview",
+        "summary": "Preserve all five hex values. Semantic names describe their visual roles, not different colors. Use Menu Ink for body copy and Garden Frame for borders and secondary emphasis.",
+        "examples": [
+          {
+            "title": "Base and surface",
+            "text": "Clean Canvas · background · #FFFFFF. Sunny Tortilla · surface · #FFD447."
+          },
+          {
+            "title": "Accent and text",
+            "text": "Radish Pop · accent · #E64D79. Menu Ink · text · #173B2B."
+          },
+          {
+            "title": "Muted role",
+            "text": "Garden Frame · muted · #28754C. Use solid green for the poster edge and white-backed secondary labels."
+          }
+        ],
+        "id": "brand-page-24",
+        "layout": "colors"
+      },
+      {
+        "title": "Using Tints",
+        "summary": "Keep logo colors solid. Reserve pale tints for nonessential backgrounds, never small text or control outlines. Use labels and shapes alongside color for every state.",
+        "examples": [
+          {
+            "title": "Quiet emphasis",
+            "text": "A 10% yellow tint over white may group order details. Keep «Total» and all amounts in solid Menu Ink."
+          },
+          {
+            "title": "Accessible states",
+            "text": "Pair «Cantidad no válida» with a visible error icon and text. Pink alone must not identify the invalid field."
+          },
+          {
+            "title": "Contrast",
+            "text": "Use ink on yellow, pink or white. Keep control boundaries at least 3:1 and normal text at least 4.5:1 against its background."
+          }
+        ],
+        "id": "brand-page-25",
+        "layout": "colors"
+      },
+      {
+        "title": "Graphic Elements",
+        "summary": "Repeat the semicircle, two cuts and continuous frame sparingly. Use flat geometry and 12 px control corners; avoid floating layers, confetti and decorative SaaS cards.",
+        "examples": [
+          {
+            "title": "Poster frame",
+            "text": "Use a 4 px Garden Frame border on a wide poster and a 2 px border on compact screens. Keep the lower action edge continuous."
+          },
+          {
+            "title": "Section marker",
+            "text": "Place one small tortilla curve beside «Bebidas». Do not use repeated marks as bullet points for every menu line."
+          }
+        ],
+        "id": "brand-page-26",
+        "layout": "divider"
+      },
+      {
+        "title": "Icons",
+        "summary": "Use simple, consistent interface icons within the installed shadcn components. Keep visible action labels, 44 px touch targets and a clear focus outline.",
+        "examples": [
+          {
+            "title": "Quantity controls",
+            "text": "Pair minus and plus icons with accessible labels «Reducir cantidad de Taco de pollo» and «Aumentar cantidad de Taco de pollo»."
+          },
+          {
+            "title": "Removal",
+            "text": "Show a small removal icon beside «Quitar». A zero quantity is invalid, not an alternative removal icon."
+          },
+          {
+            "title": "Search",
+            "text": "A magnifier supports the visible label «Buscar productos»; it does not replace that label."
+          }
+        ],
+        "id": "brand-page-27",
+        "layout": "content"
+      },
+      {
+        "title": "Illustration, not photography",
+        "summary": "Replace documentary-looking photos with nine original conceptual SVGs. Keep food complete, use shared tortilla and glass geometry, and distinguish ingredients through shapes as well as color.",
+        "examples": [
+          {
+            "title": "Taco family",
+            "text": "Pastor: slices and pineapple; asada: cubes and onion; pollo: strips; carnitas: strands; champiñones: mushroom slices; nopales: vegetable strips."
+          },
+          {
+            "title": "Drink family",
+            "text": "Jamaica uses pink liquid; horchata uses white liquid and a cinnamon stroke; agua natural uses an outlined transparent vessel."
+          },
+          {
+            "title": "Missing illustration",
+            "text": "Keep «Taco de nopales» and its price visible with «No se pudo cargar la ilustración» and «Reintentar». Never substitute another taco."
+          }
+        ],
+        "id": "brand-page-28",
+        "layout": "applications"
+      },
+      {
+        "title": "Moodboard",
+        "summary": "Build the reference board from flat menu lettering, full ingredient silhouettes and tightly aligned prices. Judge every reference by whether it makes selection and editing clearer.",
+        "examples": [
+          {
+            "title": "Include",
+            "text": "White poster, green frame, sunny heading, pink accent, ink numerals and a complete taco silhouette."
+          },
+          {
+            "title": "Exclude",
+            "text": "Split heroes, fake restaurant photography, neon kitchen scenes, 3D layers and oversized all-capitals slogans."
+          }
+        ],
+        "id": "brand-page-29",
+        "layout": "applications"
+      },
+      {
+        "title": "Applications",
+        "summary": "Treat the following applications as design studies. Carry the same frame, type hierarchy and tortilla symbol across formats without implying new app features or real restaurant operations.",
+        "examples": [
+          {
+            "title": "Elige, revisa y guarda",
+            "text": "Una demo de tacos con un pedido de ejemplo."
+          },
+          {
+            "title": "Transfer rule",
+            "text": "Change scale and arrangement for each format, not the name, mark geometry, palette or meaning of the actions."
+          }
+        ],
+        "id": "brand-page-30",
+        "layout": "divider"
+      },
+      {
+        "title": "Social media icons",
+        "summary": "Design study: use the standalone symbol for square avatars. Center its visible shape on white, with enough inset for circular cropping; do not squeeze the full name into the icon.",
+        "examples": [
+          {
+            "title": "Taquería Monterey",
+            "text": "Demo ficticia de Esteban."
+          },
+          {
+            "title": "Avatar crop",
+            "text": "Keep the tortilla within the central 70% of the square. Preserve both cuts and the full lower curve inside a circular mask."
+          }
+        ],
+        "id": "brand-page-31",
+        "layout": "logo"
+      },
+      {
+        "title": "Social media profiles",
+        "summary": "Design study: pair the symbol avatar with the exact business name and a short demo description. Do not invent a handle, address, opening hours or a messaging service.",
+        "examples": [
+          {
+            "title": "Taquería Monterey",
+            "text": "Demo ficticia de Esteban. Explora tacos y bebidas de ejemplo."
+          },
+          {
+            "title": "Profile composition",
+            "text": "Use a yellow cover with one complete taco and the name in Menu Ink. Keep promotional claims out of the biography."
+          }
+        ],
+        "id": "brand-page-32",
+        "layout": "applications"
+      },
+      {
+        "title": "Instagram posts",
+        "summary": "Design study: use a white, green-framed square with one product and a yellow heading. Keep the demo price next to the product name, not in a floating discount badge.",
+        "examples": [
+          {
+            "title": "Hoy elegimos pastor",
+            "text": "Taco al pastor · $28.00 MXN · Producto y precio de ejemplo."
+          },
+          {
+            "title": "Acompaña tu selección",
+            "text": "Agua de jamaica · $25.00 MXN · Bebida de ejemplo."
+          },
+          {
+            "title": "Post spacing",
+            "text": "Keep 48 px inside a 1080 px square. Let the illustration occupy the center and the name-price line close the lower edge."
+          }
+        ],
+        "id": "brand-page-33",
+        "layout": "applications"
+      },
+      {
+        "title": "Posters",
+        "summary": "Design study: extend the app's living poster into print. Lead with the exact name, show a complete taco and close with one price line and a visible demo notice.",
+        "examples": [
+          {
+            "title": "Un taco para empezar",
+            "text": "Taco al pastor · $28.00 MXN"
+          },
+          {
+            "title": "Printed notice",
+            "text": "Demo ficticia de Esteban · Productos y precios de ejemplo"
+          },
+          {
+            "title": "Poster geometry",
+            "text": "Use a green perimeter and yellow top band. Do not add opening dates, location pins, telephone numbers or ordering QR codes."
+          }
+        ],
+        "id": "brand-page-34",
+        "layout": "applications"
+      },
+      {
+        "title": "T-shirts and totes",
+        "summary": "Design study: keep wearable graphics simple and legible. Use a white textile field to support the unchanged mark, with the name set separately in real typography.",
+        "examples": [
+          {
+            "title": "Tacos a tu gusto",
+            "text": "Taquería Monterey · Demo de Esteban"
+          },
+          {
+            "title": "Print placement",
+            "text": "Place one compact lockup on the chest or tote center. Avoid repeating the symbol as an all-over pattern."
+          }
+        ],
+        "id": "brand-page-35",
+        "layout": "applications"
+      },
+      {
+        "title": "Takeaway packaging",
+        "summary": "Design study only: explore a printed sleeve without implying real takeaway service. Use the green frame as a wraparound line and keep the mark intact on a white panel.",
+        "examples": [
+          {
+            "title": "Una idea bien envuelta",
+            "text": "Taquería Monterey · Estudio de empaque para una demo ficticia."
+          },
+          {
+            "title": "Sleeve layout",
+            "text": "Keep the name and demo note on one flat face. Do not invent ingredient certifications, service instructions or food-safety claims."
+          }
+        ],
+        "id": "brand-page-36",
+        "layout": "applications"
+      },
+      {
+        "title": "Demo wayfinding",
+        "summary": "Design study: adapt pickup-style wayfinding to navigation within the demo. Point only to Menú and Mi pedido; do not suggest a physical counter, collection point or address.",
+        "examples": [
+          {
+            "title": "Vuelve al menú",
+            "text": "Explora los tacos y las bebidas de ejemplo."
+          },
+          {
+            "title": "Revisa tu selección",
+            "text": "Mi pedido reúne los productos que has añadido."
+          },
+          {
+            "title": "Directional treatment",
+            "text": "Use a single arrow beside the destination label. Yellow marks the destination band; green provides its boundary."
+          }
+        ],
+        "id": "brand-page-37",
+        "layout": "applications"
+      },
+      {
+        "title": "Ordering controls",
+        "summary": "Design study for /pedido: adapt installed shadcn controls to the poster. Keep 1–20 quantity editing, explicit removal and server-confirmed totals together; retain invalid input for correction.",
+        "examples": [
+          {
+            "title": "Revisar pedido",
+            "text": "Comprueba cantidades y total antes de confirmar."
+          },
+          {
+            "title": "Editable line",
+            "text": "Taco de asada · $35.00 MXN c/u · Cantidad: 2 · Subtotal: $70.00 MXN · Quitar"
+          },
+          {
+            "title": "Validation and motion",
+            "text": "Use «Escribe un número entero del 1 al 20». Animate an added reference only after success, for 160–220 ms; omit travel with reduced motion."
+          }
+        ],
+        "id": "brand-page-38",
+        "layout": "applications"
+      },
+      {
+        "title": "Order receipt",
+        "summary": "Design study for confirmation: show the saved message, frozen line specification and server total together below the scene. This is an example order record, not a payment receipt.",
+        "examples": [
+          {
+            "title": "Pedido de ejemplo guardado",
+            "text": "No se ha cobrado ni enviado a una cocina."
+          },
+          {
+            "title": "Saved specification",
+            "text": "Taco al pastor · 2 × $28.00 MXN = $56.00 MXN. Agua natural · 1 × $20.00 MXN = $20.00 MXN. Total: $76.00 MXN."
+          },
+          {
+            "title": "Next action",
+            "text": "Place «Nuevo pedido» after the specification. Keep previous orders available in the same session; do not duplicate the table above it."
+          }
+        ],
+        "id": "brand-page-39",
+        "layout": "applications"
+      },
+      {
+        "title": "Selection card",
+        "summary": "Design study: replace a rewards card with a noncommercial selection keepsake. Use repeated product silhouettes for recognition, without points, stamps, tiers or redeemable benefits.",
+        "examples": [
+          {
+            "title": "¿Cuál eliges hoy?",
+            "text": "Pastor, asada, pollo, carnitas, champiñones o nopales."
+          },
+          {
+            "title": "Card structure",
+            "text": "Use six labeled silhouettes in two rows. Do not add a membership number, reward meter or «Compra uno» offer."
+          }
+        ],
+        "id": "brand-page-40",
+        "layout": "applications"
+      },
+      {
+        "title": "Demo sign",
+        "summary": "Design study: show how the identity reads at sign scale without implying a real premises. Keep the two-line name dominant and the symbol on its white support.",
+        "examples": [
+          {
+            "title": "Taquería Monterey",
+            "text": "Demo ficticia de Esteban"
+          },
+          {
+            "title": "Sign composition",
+            "text": "Use a flat Menu Ink field, white name and yellow accent band. Exclude opening hours, service claims and address details."
+          }
+        ],
+        "id": "brand-page-41",
+        "layout": "applications"
+      },
+      {
+        "title": "Ordering website",
+        "summary": "Design study: only / and /pedido are pages. The public menu uses GET /api/menu; cart and orders require server persistence. If data is unavailable, show recovery, never pretend a save succeeded.",
+        "examples": [
+          {
+            "title": "Buscar productos",
+            "text": "Filtra por Todo, Tacos o Bebidas. Busca por nombre o descripción."
+          },
+          {
+            "title": "Armar mi pedido",
+            "text": "Añade una unidad del producto elegido y abre Mi pedido después de guardarla. «Mi pedido» solo navega."
+          },
+          {
+            "title": "No pudimos cargar el menú",
+            "text": "Reintenta para consultar productos y precios. Las acciones para añadir estarán disponibles cuando cargue el catálogo."
+          }
+        ],
+        "id": "brand-page-42",
+        "layout": "applications"
+      },
+      {
+        "title": "Favicon",
+        "summary": "Design study: derive the favicon and app icon from the same tortilla master. Preserve the full shape on white; add no letters or substitute template icons.",
+        "examples": [
+          {
+            "title": "Taquería Monterey · Menú",
+            "text": "Tacos y bebidas de ejemplo."
+          },
+          {
+            "title": "Small-size treatment",
+            "text": "Use the master geometry at 16 and 32 px. Keep the dark curve and two cuts distinct, without extra detail or a cropped support surface."
+          }
+        ],
+        "id": "brand-page-43",
+        "layout": "logo"
+      },
+      {
+        "title": "Stationery",
+        "summary": "Design study: use stationery for project notes, not invented restaurant correspondence. Keep a compact top-left lockup, a thin green rule and a generous white writing field.",
+        "examples": [
+          {
+            "title": "Notas de la demo",
+            "text": "Taquería Monterey · Selección, revisión y guardado de pedidos de ejemplo."
+          },
+          {
+            "title": "Page hierarchy",
+            "text": "Use DM Sans 400 for paragraphs and 600 for labels. Reserve yellow for one heading band; omit addresses and legal business details."
+          }
+        ],
+        "id": "brand-page-44",
+        "layout": "applications"
+      },
+      {
+        "title": "Project cards",
+        "summary": "Design study: adapt the business-card format into a project introduction. Keep the name readable on the front and the two-page scope on the back, with no invented contact information.",
+        "examples": [
+          {
+            "title": "Una demo de Esteban",
+            "text": "Taquería Monterey · Tacos, bebidas y pedidos de ejemplo."
+          },
+          {
+            "title": "Two-sided composition",
+            "text": "Front: symbol and exact name on white. Back: «Menú · Mi pedido» on yellow. Do not add a fictional role, email or telephone number."
+          }
+        ],
+        "id": "brand-page-45",
+        "layout": "applications"
+      },
+      {
+        "title": "Sharing card",
+        "summary": "Design study: retain the warmth of a gift-card format as a simple invitation to explore. It has no monetary value, redemption code, balance or purchase function.",
+        "examples": [
+          {
+            "title": "Te comparto esta demo",
+            "text": "Explora Taquería Monterey y arma un pedido de ejemplo."
+          },
+          {
+            "title": "Invitation layout",
+            "text": "Use a yellow face with one tortilla symbol and a white reverse for the message. Avoid currency figures and gift-value language."
+          }
+        ],
+        "id": "brand-page-46",
+        "layout": "applications"
+      },
+      {
+        "title": "Packaging seal",
+        "summary": "Design study: use a circular white seal as a recognition device, not a safety guarantee. Center the complete mark and keep any caption outside its clear space.",
+        "examples": [
+          {
+            "title": "Una demo con mucho color",
+            "text": "Taquería Monterey · Estudio gráfico"
+          },
+          {
+            "title": "Seal treatment",
+            "text": "Use a green perimeter and the original yellow-and-ink tortilla. Do not add «Fresco», «Sellado por seguridad» or certification symbols."
+          }
+        ],
+        "id": "brand-page-47",
+        "layout": "applications"
+      },
+      {
+        "title": "In-app help",
+        "summary": "Design study: place recovery beside the affected control, not in a new support route. Preserve the selection, distinguish local edits from saved values and never promise access to another session.",
+        "examples": [
+          {
+            "title": "No encontramos productos",
+            "text": "Prueba otra búsqueda o limpia los filtros."
+          },
+          {
+            "title": "Tu pedido cambió en otra vista",
+            "text": "Compara tu edición con los valores actuales. Elige usar los actuales o volver a aplicar tu cambio."
+          },
+          {
+            "title": "No podemos acceder a tu sesión",
+            "text": "Revisa si las cookies están permitidas. Puedes consultar el menú; los cambios quedan en pausa. No podemos recuperar pedidos de otra sesión."
+          }
+        ],
+        "id": "brand-page-48",
+        "layout": "applications"
+      },
+      {
+        "title": "Thank you",
+        "summary": "A completed public search did not identify a matching brand identity. This guide presents an original identity proposed for this project.",
+        "examples": [
+          {
+            "title": "Gracias por explorar",
+            "text": "Taquería Monterey · Demo ficticia de Esteban."
+          },
+          {
+            "title": "Sources",
+            "text": "User-supplied project plan, identity brief, palette and distributable Bricolage Grotesque / DM Sans files. Public research supplied no matching identity."
+          },
+          {
+            "title": "Final composition",
+            "text": "Use the Menu Ink cover treatment again: white symbol support, white name and a short yellow closing line. Add no commercial sign-off."
+          }
+        ],
+        "id": "brand-page-49",
+        "layout": "cover"
+      }
+    ]
+  }
+}

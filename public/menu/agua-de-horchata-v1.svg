@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 400" width="480" height="400">
+<ellipse cx="240" cy="353" rx="96" ry="10" fill="#173B2B" opacity=".07"/>
+<path d="M150 63L171 322Q176 356 239 357Q304 356 310 322L331 63Z" fill="#F3F8F7" stroke="#8EA9AB" stroke-width="4"/>
+<path d="M160 102L182 320Q186 343 239 344Q294 343 299 320L320 102Z" fill="#F5E9D0"/>
+<path d="M262 117L291 27Q297 16 311 26L285 122Z" fill="#A6632E" stroke="#774323" stroke-width="3"/><path d="M295 31L272 112" stroke="#E3AE6D" stroke-width="4"/>
+<circle cx="259" cy="306" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="278" cy="220" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="188" cy="210" r="0.7" fill="#AD875D" opacity=".5"/>
+<circle cx="242" cy="121" r="1.4" fill="#AD875D" opacity=".5"/>
+<circle cx="193" cy="128" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="183" cy="188" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="215" cy="123" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="196" cy="241" r="1.1" fill="#AD875D" opacity=".5"/>
+<circle cx="260" cy="269" r="1.1" fill="#AD875D" opacity=".5"/>
+<circle cx="197" cy="252" r="1.4" fill="#AD875D" opacity=".5"/>
+<circle cx="215" cy="304" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="199" cy="227" r="1.4" fill="#AD875D" opacity=".5"/>
+<circle cx="237" cy="275" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="228" cy="155" r="1.4" fill="#AD875D" opacity=".5"/>
+<circle cx="219" cy="161" r="1.6" fill="#AD875D" opacity=".5"/>
+<circle cx="207" cy="144" r="1.4" fill="#AD875D" opacity=".5"/>
+<circle cx="186" cy="253" r="1.4" fill="#AD875D" opacity=".5"/>
+<circle cx="248" cy="223" r="0.9" fill="#AD875D" opacity=".5"/>
+<circle cx="186" cy="248" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="270" cy="289" r="0.9" fill="#AD875D" opacity=".5"/>
+<circle cx="225" cy="190" r="1.5" fill="#AD875D" opacity=".5"/>
+<circle cx="271" cy="307" r="1.4" fill="#AD875D" opacity=".5"/>
+<circle cx="223" cy="129" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="269" cy="277" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="232" cy="225" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="209" cy="296" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="264" cy="164" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="217" cy="141" r="1.0" fill="#AD875D" opacity=".5"/>
+<circle cx="234" cy="299" r="0.9" fill="#AD875D" opacity=".5"/>
+<circle cx="204" cy="308" r="0.9" fill="#AD875D" opacity=".5"/>
+<circle cx="260" cy="132" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="236" cy="156" r="0.8" fill="#AD875D" opacity=".5"/>
+<circle cx="210" cy="191" r="1.3" fill="#AD875D" opacity=".5"/>
+<circle cx="273" cy="217" r="1.1" fill="#AD875D" opacity=".5"/>
+<circle cx="219" cy="216" r="1.1" fill="#AD875D" opacity=".5"/>
+<path d="M310 348L362 332L368 344L316 362Z" fill="#A46332" stroke="#75431F" stroke-width="2"/><path d="M319 351L359 339" stroke="#E2AD74" stroke-width="3"/>
+<ellipse cx="240" cy="65" rx="90" ry="24" fill="#FFFFFF" fill-opacity=".32" stroke="#8EA9AB" stroke-width="4"/>
+<ellipse cx="240" cy="103" rx="79" ry="19" fill="#F5E9D0" stroke="#FFFFFF" stroke-opacity=".6" stroke-width="3"/>
+<path d="M172 85L191 311Q197 326 206 328" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity=".65"/>
+</svg>
