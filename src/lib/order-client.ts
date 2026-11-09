@@ -18,6 +18,9 @@ export const money = (cents: number) => new Intl.NumberFormat("es-MX", { style: 
 export const validQuantity = (raw: string) => /^\d+$/.test(raw) && Number.isSafeInteger(Number(raw)) && Number(raw) >= 1 && Number(raw) <= 20;
 
 let initialization: Promise<CartResponse> | null = null;
+type SessionIntent = { bootstrapKey: string; recover: boolean };
+type SessionMarker = { expected?: boolean; bootstrapKey?: string; recover?: boolean };
+const sessionStates = new Map<string, { expected?: boolean; intent?: SessionIntent }>();
 function contextKey() {
   if (window.self === window.top) return "direct";
   const origins = window.location.ancestorOrigins;
@@ -28,32 +31,83 @@ function contextKey() {
 function sessionFailure(message: string): never {
   throw new RequestFailure(401, { error: { code: "SESSION_REQUIRED", message } });
 }
-export function establishSession(recover = false): Promise<CartResponse> {
+export function establishSession(recover = false, retryOriginal = false): Promise<CartResponse> {
   if (initialization) return initialization;
   initialization = (async () => {
-    if (!navigator.locks?.request) sessionFailure("No podemos proteger tu sesión en este navegador. Abre la página en un navegador con conexiones seguras y vuelve a intentarlo.");
     const scope = contextKey();
-    return navigator.locks.request(`taqueria-session:${scope}`, { mode: "exclusive" }, async () => {
+    const state = sessionStates.get(scope) || {};
+    sessionStates.set(scope, state);
+    const accessFailure = () => sessionFailure("No podemos acceder a tu sesión. Permite las cookies y el almacenamiento para guardar tu pedido.");
+    const establish = async () => {
       const markerKey = `tm-session-expectation:${scope}`;
-      let marker: { expected?: boolean; bootstrapKey?: string; recover?: boolean } = {};
-      try { marker = JSON.parse(localStorage.getItem(markerKey) || "{}"); } catch { sessionFailure("No podemos acceder a tu sesión. Permite las cookies y el almacenamiento para guardar tu pedido."); }
+      let marker: SessionMarker = {}, legacy: string | null = null;
+      try {
+        marker = JSON.parse(localStorage.getItem(markerKey) || "{}") || {};
+        legacy = localStorage.getItem("tm-session-established") || localStorage.getItem("tm-session-expectation") || localStorage.getItem("tm-session");
+      } catch { if (!recover) accessFailure(); }
+      // Retain the entire submitted intent, even if storage becomes unavailable.
+      if (!state.expected && !state.intent && marker.bootstrapKey && typeof marker.recover === "boolean") {
+        state.intent = { bootstrapKey: marker.bootstrapKey, recover: marker.recover };
+      }
+      const remember = () => {
+        state.expected = true;
+        state.intent = undefined;
+        try { localStorage.setItem(markerKey, JSON.stringify({ expected: true })); } catch { /* The private read, not storage, proves ownership. */ }
+      };
       try {
         const current = await request<CartResponse>("/api/cart");
-        localStorage.setItem(markerKey, JSON.stringify({ expected: true }));
+        remember();
         return current;
       } catch (error) {
         if (!(error instanceof RequestFailure) || error.status !== 401) throw error;
       }
-      const legacy = localStorage.getItem("tm-session-established") || localStorage.getItem("tm-session-expectation") || localStorage.getItem("tm-session");
-      if (!recover && (marker.expected || legacy || scope === "embedded:unknown")) sessionFailure("No podemos acceder a tu sesión anterior. Los cambios quedan en pausa. Revisa si las cookies están permitidas o inicia una nueva sesión de forma explícita.");
+      if (!recover && (state.expected || marker.expected || (state.intent && !retryOriginal) || legacy || scope === "embedded:unknown")) sessionFailure("No podemos acceder a tu sesión anterior. Los cambios quedan en pausa. Revisa si las cookies están permitidas o inicia una nueva sesión de forma explícita.");
       // The only persisted application data is nonsecret session expectation/bootstrap metadata.
-      const bootstrapKey = marker.bootstrapKey && marker.recover === recover ? marker.bootstrapKey : crypto.randomUUID();
-      localStorage.setItem(markerKey, JSON.stringify({ ...marker, bootstrapKey, recover }));
-      await post<SessionResponse>("/api/session", { idempotencyKey: bootstrapKey, recover });
-      const verified = await request<CartResponse>("/api/cart");
-      localStorage.setItem(markerKey, JSON.stringify({ expected: true }));
-      return verified;
-    });
+      const intent = state.intent || { bootstrapKey: crypto.randomUUID(), recover };
+      try { localStorage.setItem(markerKey, JSON.stringify({ ...marker, ...intent })); } catch { if (!recover) accessFailure(); }
+      state.intent = intent;
+      try {
+        await post<SessionResponse>("/api/session", { idempotencyKey: intent.bootstrapKey, recover: intent.recover });
+      } catch (error) {
+        // A POST 401 does not establish ownership. Clear the refused intent
+        // and keep expectation metadata to block ordinary replacement. Only
+        // later explicit recovery may create another intent; storage is not proof.
+        if (error instanceof RequestFailure) { if (error.status === 401) remember(); throw error; }
+        // A lost response does not establish ownership. Read privately first;
+        // only an explicit user retry may resubmit the frozen original intent.
+        try {
+          const current = await request<CartResponse>("/api/cart");
+          remember();
+          return current;
+        } catch (readError) {
+          if (!(readError instanceof RequestFailure) || readError.status !== 401) throw readError;
+          throw new RequestFailure(0, { error: { code: "SESSION_INITIALIZATION_UNCERTAIN", message: "No podemos confirmar si se inició tu sesión. Reintenta el acceso para comprobarla; conservamos la misma solicitud." } });
+        }
+      }
+      try {
+        const verified = await request<CartResponse>("/api/cart");
+        remember();
+        return verified;
+      } catch (error) {
+        if (error instanceof RequestFailure && error.status === 401) accessFailure();
+        throw error;
+      }
+    };
+    let enteredLock = false;
+    try {
+      if (!navigator.locks?.request) return accessFailure();
+      return await navigator.locks.request(`taqueria-session:${scope}`, { mode: "exclusive" }, () => {
+        enteredLock = true;
+        return establish();
+      });
+    } catch (error) {
+      // Only a denied lock capability permits this fallback, never a failed request.
+      if (!enteredLock && error instanceof DOMException && error.name === "SecurityError") {
+        if (recover) return establish();
+        return accessFailure();
+      }
+      throw error;
+    }
   })().finally(() => { initialization = null; });
   return initialization;
 }
